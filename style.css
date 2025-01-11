@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+font-family: "Poppins", sans-serif;
+scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85 ,85);
+}
+/* Transiton */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* Navigation */
+
+#desktop-nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.logo{
+    margin-left: 8rem;
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor: default;
+}
+.nav-links, .nav-links a{
+    display: flex;
+    margin-left: 1rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    margin-right: 10rem;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* nav bar done */
+
+#hamburger-nav{
+    display: none;
+}
+.hamburger-nav{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
