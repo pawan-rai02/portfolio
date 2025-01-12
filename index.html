@@ -19,7 +19,8 @@ referrerpolicy="no-referrer"
 <body>
     <nav id="desktop-nav">
         <div class="logo">Pawan Rai</div>
-        <div class="nav-links" id="navLinks">      
+        <div class="nav-links" id="navLinks"> 
+            <i class="fa fa-xmark" onclick="hideMenu()"></i>     
             <ul>
                 <li><a href="#">About</a>
                 <li><a href="index.html">Experience</a>
@@ -27,40 +28,55 @@ referrerpolicy="no-referrer"
                 <li><a href="#">Contact</a>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Pawan Rai</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="img/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="button-container">
+          <button
+            class="button button-color-2"
+            onclick="window.open('img/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="button button-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-     </nav>
+        <div id="socials-container">
+          <img
+            src="img/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="img/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-400px";
+        }
+    </script>
 
 </body>
 </html>
