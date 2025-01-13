@@ -146,3 +146,63 @@ section{
 }
 
 /* BUttons  */
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.button{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+.button-color-1, .button-color-2{
+    border: 0.1rem solid rgb(53, 53, 53);
+}
+
+.button-color-1:hover, .button-color-2:hover{
+    cursor: pointer;
+    border: 0.12rem solid #f44336;
+}
+.button-color-2:hover{
+    background: #000;
+    color: aliceblue;
+}
+.button-color-1{
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+/* about  */
+
+#about{
+    position: relative;
+}
+.about-container{
+    gap: 2rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+    }
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
