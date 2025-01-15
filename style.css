@@ -255,3 +255,54 @@ section{
     cursor: default;
   }
   
+
+
+  /* Projects */
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+
+
+  /* contact info */
+  .contact-info-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: .5rem;
+    border: .1rem solid #f44336;
+    border-radius: 2rem;
+    height: 15vh;
+  }
+
+  .contact-containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    gap: .5rem;
+    
+  }
+
+  .contact-containers p a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  #contact{
+    height: 40vh;
+  }
+
+  /* Footer */
+
+  footer{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 10vh;
+  }
+  footer p{
+    text-align: center;
+   
+  }
