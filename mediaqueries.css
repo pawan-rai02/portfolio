@@ -36,3 +36,16 @@
   }
 }
 
+@media(max-width:1000px){
+    #experience{
+        flex-direction: column;
+    }
+    #projects, .details-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #about, .section-container, .experience-details-container {
+        display: block;
+        flex-direction: column;
+    }
+}
